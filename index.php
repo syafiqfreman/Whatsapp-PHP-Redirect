@@ -1,23 +1,17 @@
- <?php
+<?php
+define('REDIRECT_URI', 'https://example.com');
 
- $mobile  = $_GET['p'];
- $text  = $_GET['t'];
- 
+$mobile  = $_GET['p'] ?? null;
+$text  = $_GET['t'] ?? null; 
+$redirect_uri = !is_null($mobile) ? 'https://api.whatsapp.com/send?phone='.$mobile.'&text='.$text : REDIRECT_URI;
 
- if(empty($_GET['p'])) 
- { 
- 	header("Location: https://example.com");
- }
+header('Location:' . $redirect_uri);
+exit();
 
- else
+?>
 
- 	header("Location: https://api.whatsapp.com/send?phone=".$mobile."&text=".$text);
- exit;
-
- ?>
-
- <html>
- <head>
- 	<title>Whatsapp PHP Redirect</title>
- </head>
- </html>
+<html>
+<head>
+<title>Whatsapp PHP Redirect</title>
+</head>
+</html>
