@@ -7,11 +7,3 @@ $redirect_uri = !is_null($mobile) ? 'https://api.whatsapp.com/send?phone='.$mobi
 
 header('Location:' . $redirect_uri);
 exit();
-
-?>
-
-<html>
-<head>
-<title>Whatsapp PHP Redirect</title>
-</head>
-</html>
