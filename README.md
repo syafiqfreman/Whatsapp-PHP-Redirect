@@ -1,5 +1,5 @@
-# Whatsapp-PHP-Redirect
-Redirect domain name with phone number to Whatsapp API.
+# WhatsApp-PHP-Redirect
+Redirect domain name with phone number to WhatsApp API.
 
 Example:
 
