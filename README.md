@@ -8,3 +8,8 @@ Example:
 2- YourDomainName.com/60199780000/your+text will redirect 'your text' to Whatsapp API
 
 Edit both index.php and htaccess to suit your need.
+
+#Requirements:
+
+Apache web server to use htaccess
+PHP 5 and above
